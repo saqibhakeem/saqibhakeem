@@ -36,7 +36,7 @@ A multi-tenant B2B SaaS platform that replaces manual call centers with autonomo
 - **Telephony Lifecycle & Automated Retries:** Twilio Voice PSTN gateway, 25s ring timeout, and automated 2-hour retry scheduling for missed calls.
 - **Multi-Tenant SaaS Portal & Softphone Lab:** React 19, TypeScript, and Tailwind CSS v4 console with self-serve onboarding, RTO risk scoring (0-100), and an in-browser WebAudio softphone simulator.
 - **Production-grade reliability:** 71 automated async tests ($100\%$ pass rate) covering telephony, agents, and multi-tenant isolation.
-- **Stack:** Python, FastAPI, AsyncGroq, LLaMA 3.3 70B, Whisper, Meta WhatsApp Cloud API, Twilio Voice, React 19, TypeScript, Vite, Tailwind CSS v4, SQLAlchemy, Pytest
+- **Stack:** Python, FastAPI, AsyncGroq, OpenAI-GPT OSS 120B, Whisper, Meta WhatsApp Cloud API, Twilio Voice, React 19, TypeScript, Vite, Tailwind CSS v4, SQLAlchemy, Pytest
 - 🔗 [Repository](https://github.com/saqibhakeem/VanGuardCOD.git)
 
 ### 🍽️ Restaurant MCP + RAG System
