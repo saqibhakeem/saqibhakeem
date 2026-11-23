@@ -101,11 +101,4 @@ I take on projects where AI needs to do real work:
 
 ---
 
-## 📊 GitHub Stats
-
-![Saqib's GitHub stats](https://github-readme-stats.vercel.app/api?username=saqibhakeem&show_icons=true&theme=tokyonight&hide_border=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=saqibhakeem&layout=compact&theme=tokyonight&hide_border=true)
-
----
-
 <p align="center"><i>I build AI that acts, not just answers.</i></p>
