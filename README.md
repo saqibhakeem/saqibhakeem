@@ -32,7 +32,7 @@ An MCP server that gives an AI agent live access to restaurant data (menu, avail
 - Exposes restaurant operations as tools an agent can call
 - RAG layer answers questions from menu and policy documents
 - **Stack:** Python, MCP, RAG, ChromaDB, FastAPI
-- 🔗 [Repository]((https://github.com/saqibhakeem/MCP-Server-Restaurant-and-Client-Agent-.git)
+- 🔗 [Repository](https://github.com/saqibhakeem/MCP-Server-Restaurant-and-Client-Agent-.git)
 
 ### 📞 AI Calling Agent (ElevenLabs)
 A voice agent that holds natural phone conversations, handles customer queries, and completes tasks over a call.
