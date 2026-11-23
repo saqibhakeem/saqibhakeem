@@ -18,7 +18,8 @@ I build AI systems that work without supervision: agents that use tools through 
 |---|---|
 | 🤖 **Autonomous AI agents** | Agents that plan, call tools, retrieve knowledge, and complete multi-step tasks |
 | 🔌 **MCP servers & integrations** | Connect LLMs to real business data and tools through the Model Context Protocol |
-| 🎙️ **Voice & calling agents** | Real-time conversational agents that answer and make calls |
+| 🎙️ **Voice & calling agents** | Sub-second voice agents with real-time speech-to-speech and barge-in interruption |
+| 💬 **WhatsApp conversational AI** | Omni-channel conversational agents for orders, verification, and support |
 | 💬 **WhatsApp bots** | Customer-facing bots for support, orders, and automation |
 | 📄 **RAG systems** | Document Q&A with grounded, source-backed answers |
 | ⚙️ **MLOps pipelines** | Automated ingestion, retraining, deployment, and monitoring |
@@ -26,6 +27,17 @@ I build AI systems that work without supervision: agents that use tools through 
 ---
 
 ## 🛠️ Featured Systems
+
+### 🛡️ VanguardCOD: Autonomous Voice & WhatsApp AI for E-Commerce COD
+A multi-tenant B2B SaaS platform that replaces manual call centers with autonomous voice and WhatsApp AI to verify Cash-on-Delivery (COD) orders, capture landmarks, negotiate address alterations, and eliminate Return-to-Origin (RTO) losses in emerging markets.
+- **Ultra-low latency ($\le 650\text{ ms}$) voice pipeline:** Built a framework-less AsyncGroq runtime (Whisper Large v3 Turbo, LLaMA 3.3 70B, Orpheus TTS) with hardware-level RMS barge-in interruption.
+- **Meta WhatsApp Cloud API Agent:** Multi-turn conversational chat for instant order confirmation, landmark negotiation, and delivery rescheduling.
+- **Deterministic HITL Checkpoints & Anti-Loop Safeguards:** Gated price alterations and address changes pause for admin approval; customers receive instant WhatsApp notifications upon decision, backed by approval memory injection that prevents duplicate tickets.
+- **Telephony Lifecycle & Automated Retries:** Twilio Voice PSTN gateway, 25s ring timeout, and automated 2-hour retry scheduling for missed calls.
+- **Multi-Tenant SaaS Portal & Softphone Lab:** React 19, TypeScript, and Tailwind CSS v4 console with self-serve onboarding, RTO risk scoring (0-100), and an in-browser WebAudio softphone simulator.
+- **Production-grade reliability:** 71 automated async tests ($100\%$ pass rate) covering telephony, agents, and multi-tenant isolation.
+- **Stack:** Python, FastAPI, AsyncGroq, LLaMA 3.3 70B, Whisper, Meta WhatsApp Cloud API, Twilio Voice, React 19, TypeScript, Vite, Tailwind CSS v4, SQLAlchemy, Pytest
+- 🔗 [Repository](https://github.com/saqibhakeem/VanGuardCOD.git)
 
 ### 🍽️ Restaurant MCP + RAG System
 An MCP server that gives an AI agent live access to restaurant data (menu, availability, and knowledge base) combined with RAG for accurate, grounded answers.
@@ -74,15 +86,17 @@ A computer vision model for dental X-ray diagnosis, built with clinical staff in
 
 ## 🧰 Tech Stack
 
-**Agents & LLMs:** LangChain · LangGraph · MCP · Tool Calling · Agentic RAG · Groq · ElevenLabs
+**Agents & LLMs:** LangChain · LangGraph · AsyncGroq · Whisper · MCP · Tool Calling · Agentic RAG · ElevenLabs
 
-**Backend:** Python · FastAPI · Django · Java · REST APIs
+**Backend & APIs:** Python · FastAPI · AsyncIO · Django · REST APIs · WebSockets · Meta WhatsApp Cloud API · Twilio Telephony
+
+**Frontend & Visuals:** React 19 · TypeScript · Vite · Tailwind CSS · WebAudio API
 
 **ML & Deep Learning:** PyTorch · TensorFlow · scikit-learn · YOLO · SHAP · NLP · Computer Vision
 
 **MLOps & Deployment:** Docker · GitHub Actions · CI/CD · Hopsworks · Streamlit
 
-**Data:** PostgreSQL · MySQL · MongoDB · ChromaDB · Pandas · NumPy
+**Data:** PostgreSQL · SQLite (aiosqlite) · MySQL · MongoDB · ChromaDB · SQLAlchemy 2.0 · Pandas · NumPy
 
 ---
 
